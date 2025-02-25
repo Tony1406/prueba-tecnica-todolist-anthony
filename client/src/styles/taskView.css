@@ -1,0 +1,351 @@
+* {
+  background-color: hsl(235, 21%, 11%);
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  font-weight: 400;
+}
+
+img {
+  background: 0;
+}
+
+.imgFondoGrande {
+  width: 100%;
+}
+
+.imgFondoPequeño {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 500px;
+  padding: 60px;
+  margin-top: -225px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: 0;
+  width: auto;
+}
+
+h1 {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 40px;
+  font-size: 40px;
+  background: 0;
+  letter-spacing: 10px;
+}
+
+.inputTask {
+  color: hsl(234, 39%, 85%);
+  padding: 20px;
+  margin-bottom: 20px;
+  border: unset;
+  outline: none;
+  font-size: 18px;
+  background-color: hsl(235, 24%, 19%);
+}
+
+ul {
+  color: hsl(234, 39%, 85%);
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  background-color: hsl(235, 24%, 19%);
+  padding: 20px;
+  list-style: none;
+  border-bottom: 1px solid hsl(237, 14%, 26%);
+  box-shadow: 0px 20px 40px 0px rgb(0 0 0 / 44%);
+}
+
+p {
+  background-color: hsl(235, 24%, 19%);
+}
+
+.itemsLeft {
+  color: hsl(237, 10%, 40%);
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  background: 0;
+  color: hsl(237, 10%, 40%);
+}
+
+footer {
+  font-size: 22px;
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(237, 10%, 40%);
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-left: 15px;
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(237, 10%, 40%);
+}
+
+.all {
+  color: hsl(220, 98%, 61%);
+}
+
+.active:hover {
+  color: hsl(233, 11%, 84%);
+}
+
+.complete:hover {
+  color: hsl(233, 11%, 84%);
+}
+
+.clearCompleted:hover {
+  color: hsl(233, 11%, 84%);
+}
+
+.checkImage {
+  border: 1px solid;
+  border-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)) 1;
+  height: auto;
+  padding: 4px;
+}
+
+.checkImage:hover {
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+input[type="checkbox" i] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 0.5px solid hsl(220, 98%, 61%);
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"]:not(:checked) {
+  background: transparent;
+  border: 1px solid hsl(237, 12%, 50%);
+}
+
+input[type="checkbox"]:checked {
+  background: linear-gradient(
+    to right,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+  border: 0.5px solid hsl(220, 98%, 61%);
+  position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  background-image: url("/icon-check.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60%;
+  height: 70%;
+  display: block;
+}
+
+.xButton {
+  padding: 0;
+  padding-right: 3px;
+}
+
+.task {
+  text-align: justify;
+  padding: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 65%;
+}
+
+.footer2 {
+  display: none;
+}
+
+.filters2 {
+  display: none;
+}
+
+@media screen and (min-width: 377px) and (max-width: 1440px) {
+  .container {
+    width: auto;
+    max-width: 70%;
+    padding: 0px;
+    margin-top: -76px;
+  }
+
+  h1 {
+    font-size: 70px;
+    letter-spacing: 20px;
+  }
+
+  .imgFondoGrande {
+    display: block;
+    width: 100%;
+  }
+
+  img {
+    width: 30px;
+  }
+
+  .inputTask {
+    font-size: 30px;
+    padding: 23px;
+  }
+
+  li {
+    font-size: 26px;
+    padding: 28px;
+    gap: 12px;
+  }
+
+  input[type="checkbox" i] {
+    width: 50px;
+    height: 50px;
+  }
+
+  input[type="checkbox"]:checked::after {
+    width: 60%;
+    height: 50%;
+  }
+
+  .footer {
+    font-size: 20px;
+  }
+
+  .sunMoon {
+    width: 30px !important;
+  }
+}
+@media screen and (max-width: 530px) and (min-width: 1px) {
+  .imgFondoGrande {
+    display: none;
+  }
+
+  .imgFondoPequeño {
+    width: 100%;
+    display: block;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 30px;
+    padding-top: 60px;
+    margin-top: -191px;
+  }
+
+  h1 {
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+
+  .inputTask {
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 20px 17px 17px 0px rgb(0 0 0 / 30%);
+  }
+
+  ul {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  li {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 20px 17px 17px 0px rgb(0 0 0 / 30%);
+  }
+
+  .task {
+    text-align: justify;
+    font-size: 13px;
+  }
+
+  .checkBox,
+  .xButton {
+    padding: 8px;
+  }
+
+  .filters {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .footer2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .filters2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin-left: 0;
+    background: 0;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  img {
+    width: 20px;
+  }
+
+  input[type="checkbox" i] {
+    width: 27px;
+    height: 27px;
+  }
+
+  input[type="checkbox"]:checked::after {
+    width: 60%;
+    height: 60%;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  .itemsLeft {
+    color: hsl(237, 10%, 40%);
+    font-size: 12px;
+  }
+
+  .sunMoon {
+    width: 30px !important;
+  }
+}
