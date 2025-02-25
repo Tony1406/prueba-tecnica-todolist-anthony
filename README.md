@@ -1,21 +1,18 @@
-### 📌 **README.md**
-
-````md
 # ToDo List - React + Node.js con TypeScript
 
 Este proyecto es una aplicación **ToDo List** desarrollada con **React (Vite) y Node.js (sin frameworks), usando TypeScript**.
 
 ## 🚀 Instalación y Ejecución
 
-## 1️⃣ **Frontend (React con Vite + TypeScript)**
+### 1️⃣ **Frontend (React con Vite + TypeScript)**
 
-### **Instalar dependencias**
+#### 📦 **Instalar dependencias**
 
 ```sh
 cd prueba-tecnica-todolist-anthony/client
 npm install
+
 ```
-````
 
 ### **Iniciar el servidor de desarrollo**
 
